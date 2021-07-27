@@ -1,0 +1,65 @@
+Arguments: 
+  /usr/local/bin/node /Users/millionchen/.yarn/bin/yarn.js add -D commitize
+
+PATH: 
+  /Users/millionchen/.yarn/bin:/Users/millionchen/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  13.9.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/commitize: Not found
+      at Request.params.callback [as _callback] (/Users/millionchen/.yarn/lib/cli.js:66091:18)
+      at Request.self.callback (/Users/millionchen/.yarn/lib/cli.js:129590:22)
+      at Request.emit (events.js:321:20)
+      at Request.<anonymous> (/Users/millionchen/.yarn/lib/cli.js:130562:10)
+      at Request.emit (events.js:321:20)
+      at IncomingMessage.<anonymous> (/Users/millionchen/.yarn/lib/cli.js:130484:12)
+      at Object.onceWrapper (events.js:427:28)
+      at IncomingMessage.emit (events.js:333:22)
+      at endReadableNT (_stream_readable.js:1201:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "changelog",
+    "version": "2.0.2-beta.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "commit": "git-cz",
+      "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
+    },
+    "standard-version": {
+      "skip": {
+        "tag": true
+      }
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/MillionChen/changelog.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/MillionChen/changelog/issues"
+    },
+    "homepage": "https://github.com/MillionChen/changelog#readme",
+    "devDependencies": {
+      "conventional-changelog-cli": "^2.1.1",
+      "standard-version": "^9.3.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
