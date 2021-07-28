@@ -1,0 +1,44 @@
+{
+  "name": "changelog",
+  "version": "2.0.2-beta.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --commit-path",
+    "logh": "conventional-changelog -p angular -i CHANGELOG.md -w ",
+    "log": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0",
+    "change":"conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "commit": "cz",
+    "commitexact": "commitizen init cz-conventional-changelog --save --save-exact --force"
+  },
+  "standard-version": {
+    "skip": {
+      "tag": true,
+      "commit": true
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MillionChen/changelog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MillionChen/changelog/issues"
+  },
+  "homepage": "https://github.com/MillionChen/changelog#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "company-commit": "^1.1.1",
+    "conventional-changelog-cli": "^2.1.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.1",
+    "standard-version": "^9.3.1"
+  }
+}
